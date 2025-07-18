@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img id="thumbnail" class="thumbnail" src=""></img>
+            <div class="song-title">Song Name</div>
+            <div class="controls">
+                <button class="prev">⏮</button>
+                <button class="play">▶</button>
+                <button class="shuffle">✧₊</button>
+                <button class="next">⏭</button>
+            </div>
+            <p>Timeline</p>
+            <input type="range" class="timeline" value="0" />
+            <p>Volume</p>
+            <input type="range" class="volume" min="0" max="1" value="1" step="0.01" />
+        </div>
+
+        <div class="right-panel">
+            <div class="right-heading">
+                <div class="all-song-heading">All Songs</div>
+                <input type="text" class="searchbox" placeholder="Search Songs..." id="searchbox">
+            </div>
+            <div class="song-list"></div>
+        </div>
+    </div>
+    <button class="drawer">Open All Songs</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
