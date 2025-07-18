@@ -1,4 +1,4 @@
-# 🎵 Web Music Player
+# 🎵 BeatCast
 
 A sleek JavaScript music player with **smart shuffle**, **search**, and **dynamic audio controls** — built with HTML, CSS, and JS.
 
