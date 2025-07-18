@@ -48,10 +48,24 @@ function loadSong(index) {
     audio.src = `assets/audio/${songFile}`;
     songTitle.textContent = songFile.replace(".mp3", "");
     thumbnailImg.src = thumbnailSrc;
+    setFavicon(thumbnailSrc);
+    document.title = songFile.replace('.mp3','');
 
     document.body.style.backgroundImage = "linear-gradient(45deg, #9dfcf7ff, #fda6c2ff)";
     timeline.value = 0;
     audio.load();
+}
+
+function setFavicon(iconURL) {
+  let link = document.querySelector("link[rel~='icon']");
+  
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+  }
+  
+  link.href = iconURL;
 }
 
 function playPause() {
