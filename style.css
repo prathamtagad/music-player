@@ -10,6 +10,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
@@ -41,9 +42,9 @@ body {
 
 @media (max-width: 799px) {
     body{
-        min-height: 170vh;
+        min-height: 170vh !important;
     }
-    
+
     .container{
         display: flex;
         flex-direction: column;
@@ -75,8 +76,9 @@ body {
         margin-top: 35px !important;
         color: #000 !important;
     }
-    .drawer{
-        display: flex;
+
+    .info{
+        display: none;
     }
 }
 
@@ -213,11 +215,15 @@ p {
     background-color: #ffffff56;
 }
 
+.all-song-heading{
+    padding: 5px;
+}
+
 .searchbox{
     border: none;
     padding: 5px;
     border-radius: 5px;
-    background-color: #ffffff66;
+    background: linear-gradient(45deg, rgba(157, 252, 247, 0.300), rgba(253, 166, 193, 0.300));
 }
 
 .song-list {
@@ -242,4 +248,16 @@ p {
 
 .song-item:hover {
     background: rgba(255, 255, 255, 0.30);
+}
+
+.info{
+    margin-top: 20px;
+    background-color: #ffffff5d;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
 }
