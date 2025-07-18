@@ -2,6 +2,8 @@
 
 A sleek JavaScript music player with **smart shuffle**, **search**, and **dynamic audio controls** — built with HTML, CSS, and JS.
 
+<a href="https://beatcast.netlify.app/" target="_blank">View Live Site</a>
+
 ---
 
 ## ✨ Features
