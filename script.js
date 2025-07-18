@@ -165,6 +165,17 @@ searchtxt.addEventListener('input', function () {
     populateSongList(sorted);
 });
 
+function sendToFlutter(event, payload = {}) {
+    if (window.FlutterWebViewChannel) {
+        window.FlutterWebViewChannel.postMessage(JSON.stringify({ event, ...payload }));
+    }
+}
+
+audio.addEventListener('play', () => sendToFlutter('play'));
+audio.addEventListener('pause', () => sendToFlutter('pause'));
+audio.addEventListener('ended', () => sendToFlutter('ended'));
+
+
 playBtn.addEventListener('click', playPause);
 nextBtn.addEventListener('click', nextSong);
 prevBtn.addEventListener('click', prevSong);
