@@ -52,13 +52,13 @@ project-folder/
 ## 📸 Preview
 
 ![Music Player Desktop Screenshot](assets/preview1.jpeg)  
-![Music Player Phone Screenshot](assets/preview.jpeg)  
+![Music Player Phone Screenshot](assets/preview2.jpeg)  
 
 ---
 
 ## 💖 Credits
 
-Made with passion by [Your Name](https://github.com/yourusername)
+Made with passion by [Pratham Tagad](https://github.com/prathamtagad)
 
 ---
 
